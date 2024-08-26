@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="false" name="Suite">
+  <test name="Test1" thread-count="1" >
+    <classes>
+   
+      <class name="com.com.verizon.LoginTest">
+         <parameter name="id" value="verizonuser1"/>
+         <parameter name="pwd" value="password@123"/>
+  
+      </class>
+      </classes>
+      </test>
+     <test name="Test2" thread-count="2" >
+    <classes>
+      <class name="com.verizon.NewTest"/>
+      </classes>
+      </test>
+      
+      <test name="Test3" thread-count="2" >
+    <classes>
+   
+      <class name="com.com.verizon.SumTest"/>
+      </classes>
+      </test>
+      
+      <test name="Test4">
+      <classes>
+      <class name="com.com.verizon.LoginTest">
+        <parameter name="id" value="verizonuser2"/>
+        <parameter name="pwd" value="password@2"/>
+        
+      </class>
+      </classes>
+      </test>
+      
+  <test name="Test5">
+      <classes>
+      <class name="com.com.verizon.LoginTest">
+        <parameter name="id" value="verizonuser3"/>
+        <parameter name="pwd" value="password@3"/>
+        
+      </class>
+      </classes>
+      </test>
+    
+
+</suite> <!-- Suite -->
