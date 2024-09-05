@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class JdbcDemo {
 public static void main(String[] args)throws ClassNotFoundException,SQLException {
 	Class.forName("oracle.jdbc.driver.OracleDriver");
-	Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","SYSTEM","Anju1914");
+	Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","SYSTEM","verizon");
 	System.out.println("Connection successful");
 	Statement st=con.createStatement();
 	PreparedStatement pst=con.prepareStatement("insert into plan values(?,?)");
